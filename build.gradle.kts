@@ -40,6 +40,11 @@ tasks.withType<KotlinCompile> {
     }
 }
 
+// Kover
+dependencies {
+    kover(project(":app"))
+}
+
 koverReport {
     filters {
         excludes {
