@@ -3,5 +3,31 @@
   "extends": [
     "config:base"
   ],
-  "labels": ["dependencies"]
+  "labels": [
+    "dependencies"
+  ],
+  "packageRules": [
+    {
+      "matchPackagePatterns": [
+        "com.android.library",
+        "com.android.application"
+      ],
+      "groupName": "Android Gradle Plugin"
+    },
+    {
+      "matchPackagePatterns": [
+        "androidx.compose.*"
+      ],
+      "groupName": "Compose"
+    },
+    {
+      "matchPackagePatterns": [
+        "composeOptions",
+        "org.jetbrains.kotlin.android",
+        "org.jetbrains.kotlin:kotlin-stdlib*",
+        "org.jetbrains.kotlin.plugin.*"
+      ],
+      "groupName": "Kotlin & Compose Compiler"
+    }
+  ]
 }
