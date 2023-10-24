@@ -5,12 +5,13 @@ plugins {
 
 android {
     namespace = "com.hello.curiosity.regenranch"
-    compileSdk = 33
+    compileSdk = 34
+    buildToolsVersion = "34.0.0"
 
     defaultConfig {
         applicationId = "com.hello.curiosity.regenranch"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
